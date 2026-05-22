@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6",
+    "rootDir": "./master",
+    "outDir": "./master-compiled",
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "lib": ["es6", "DOM"]
+    // "types": ["reflect-metadata"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["./master/**/*"]
+}

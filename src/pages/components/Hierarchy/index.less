@@ -1,0 +1,66 @@
+.hierarchy-container {
+  background-color: #17191b;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+
+  .tree {
+    flex: 1;
+    // 避免 Tree 尺寸变动对外部容器的影响
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4px;
+    background-color: #17191b;
+    overflow: auto;
+
+    * {
+      transition: none !important;
+      animation: none !important;
+    }
+
+    :global {
+      // 隐藏展开和收起节点时的动画
+      .ant-motion-collapse {
+        display: none !important;
+      }
+
+      .ant-tree-node-selected,
+      .ant-tree-treenode-selected {
+        background-color: #1b56cb !important;
+        color: rgba(241, 243, 255, 0.8) !important;
+      }
+
+      .ant-tree-node-content-wrapper:hover,
+      .ant-tree-switcher_close::before,
+      .ant-tree-switcher_open::before {
+        background-color: transparent !important;
+      }
+
+      .ant-tree-node-content-wrapper,
+      .ant-tree-switcher {
+        color: rgba(241, 243, 255, 0.6);
+      }
+
+      .ant-tree-switcher {
+        margin-inline-end: 0;
+      }
+    }
+  }
+}
+
+:global {
+  .custom-dropdown-container {
+    .ant-dropdown-menu-item {
+      padding: 1px 8px !important;
+      line-height: 22px;
+    }
+
+    .ant-dropdown-menu-item:hover {
+      background: #1b56cb !important;
+      width: 100% !important;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.application-container {
+  background: #17191b;
+  padding: 2px 2px 8px 2px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .variables-container {
+    flex: 1;
+    background: #202224;
+    padding: 8px;
+    position: relative;
+    height: calc(100% - 32px);
+
+    .variables-list {
+      height: calc(100% - 32px);
+      margin-top: 8px;
+      border: 2px solid #17191b;
+      overflow: auto;
+
+      :global {
+        .ant-table-sticky-scroll {
+          display: none;
+        }
+
+        .ant-table-thead > tr > th {
+          font-size: 14px;
+          color: rgba(241, 243, 255, 0.45) !important;
+          line-height: 22px;
+          border-right: 1px solid #17191b;
+          background: #313337 !important;
+        }
+
+        .ant-table-tbody {
+          .ant-table-cell {
+            cursor: pointer;
+            background: #202224 !important;
+            border-bottom: none !important;
+          }
+
+          tr > td {
+            border-bottom: none !important;
+          }
+        }
+
+        .ant-table-cell {
+          width: 50%;
+          padding-block: 1px !important;
+          font-weight: 400 !important;
+        }
+
+        .ant-table-tbody > tr.ant-table-row-selected > td {
+          background-color: #1c61ea !important;
+          transition: none !important;
+        }
+      }
+    }
+  }
+
+  .footer-btns {
+    margin-top: 6px;
+    margin-left: 312px;
+
+    .btn-style {
+      height: 24px;
+      background: #1b56cb;
+      margin-right: 8px;
+      border-radius: 4px;
+      color: rgba(241, 243, 255, 0.85);
+    }
+
+    .btn-style:disabled {
+      height: 24px;
+      margin-right: 8px;
+      background: #282a2d;
+      color: rgba(241, 243, 255, 0.25);
+      border-radius: 4px;
+      border: 1px solid #313337;
+    }
+
+    .cancel-btn {
+      background: #424549;
+      margin-right: 8px;
+      border-radius: 4px;
+      font-size: 14px;
+      color: rgba(241, 243, 255, 0.85);
+      border: none;
+      height: 24px !important;
+    }
+  }
+}
+
+.borderless-select {
+  :global {
+    .ant-select-selector {
+      border: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+    }
+  }
+}
+
+.borderless-input {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.modified-value {
+  color: #1b56cb;
+}

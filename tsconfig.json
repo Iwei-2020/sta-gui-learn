@@ -1,0 +1,9 @@
+{
+  "extends": "./src/.umi/tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types"],
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

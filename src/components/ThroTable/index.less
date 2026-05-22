@@ -1,0 +1,50 @@
+.table-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #282a2d !important;
+
+  :global {
+    .ant-table-sticky-scroll {
+      display: none;
+    }
+
+    .ant-table-thead > tr > th {
+      font-size: 14px;
+      color: rgba(241, 243, 255, 0.45) !important;
+      line-height: 22px;
+      border-right: 1px solid #17191b;
+    }
+
+    .ant-table-header {
+      overflow: visible !important;
+      line-height: 24px;
+
+      .ant-table-cell {
+        background: #282a2d !important;
+      }
+    }
+
+    .ant-table-body {
+      .ant-table-cell {
+        cursor: pointer;
+        background: #202224 !important;
+      }
+
+      tr > td {
+        border-bottom: none;
+      }
+    }
+
+    .ant-table-cell {
+      padding-block: 1px !important;
+      font-weight: 400 !important;
+    }
+
+    .ant-table-tbody .ant-table-row.ant-table-row-selected > .ant-table-cell,
+    .ant-table-tbody > tr.ant-table-row-selected > td {
+      background-color: #1c61ea !important;
+      transition: none !important;
+    }
+  }
+}

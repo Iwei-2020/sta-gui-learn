@@ -1,0 +1,110 @@
+.timing-container {
+  width: 100%;
+  height: 100%;
+  background-color: #17191b;
+  display: flex;
+  flex-direction: column;
+
+  .chooser-panel {
+    background: #282a2d;
+    padding: 12px 2px 12px 30px;
+    margin-bottom: 2px;
+
+    .chooser-container {
+      max-height: 160px;
+      padding-right: 4px;
+      overflow: auto;
+
+      .chooser-item {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        height: 24px;
+
+        :global {
+          .ant-form-item {
+            margin-bottom: 0;
+          }
+        }
+
+        .chooser-path {
+          width: 138px;
+          height: 24px;
+          background: #17191b;
+          border-radius: 4px;
+          border: 1px solid #313337;
+        }
+
+        .chooser-element {
+          width: 80px;
+          height: 24px;
+          background: #17191b;
+          border-radius: 4px;
+          border: 1px solid #313337;
+        }
+
+        .object-chooser-icon {
+          width: 16px;
+          height: 14px;
+        }
+
+        .selection-btn {
+          width: 84px;
+          background: #282a2d;
+          border-radius: 4px;
+          border: 1px solid #313337;
+
+          font-size: 14px;
+          line-height: 22px;
+          color: rgba(241, 243, 255, 0.25);
+          text-align: left;
+          font-style: normal;
+        }
+
+        .remove-btn {
+          width: 14px;
+          height: 14px;
+          margin-left: 8px;
+          color: rgba(241, 243, 255, 0.6);
+        }
+      }
+    }
+
+    .add-btn {
+      width: 124px;
+      height: 24px;
+      margin-top: 8px;
+      background: #424549;
+      color: rgba(241, 243, 255, 0.85);
+      border-radius: 4px;
+    }
+  }
+
+  .btn-box {
+    display: flex;
+    gap: 6px;
+    padding: 8px;
+    justify-content: flex-end;
+
+    .ok-btn {
+      width: 45px;
+      height: 24px;
+      background: #1b56cb;
+      border-radius: 4px;
+    }
+
+    .cancel-btn {
+      width: 69px;
+      height: 24px;
+      background: #424549;
+      border-radius: 4px;
+    }
+
+    .default-btn {
+      width: 78px;
+      height: 24px;
+      background: #424549;
+      border-radius: 4px;
+    }
+  }
+}

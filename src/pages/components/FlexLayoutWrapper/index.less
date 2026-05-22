@@ -1,0 +1,105 @@
+.flexlayout__floating_window_content,
+.flexlayout_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+
+  .flexlayout__tab {
+    background-color: #202224;
+  }
+
+  .flexlayout__tab_button {
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #313337;
+    background: #202224;
+    background-color: none !important;
+    height: 32px;
+    width: 152px;
+
+    .flexlayout__tab_button_content {
+      width: 110px;
+      font-size: 14px;
+      color: rgba(241, 243, 255, 0.6);
+    }
+  }
+
+  .flexlayout__tabset-selected {
+    background-color: #17191b;
+    background-image: none;
+
+    .flexlayout__tab_button--selected {
+      background: #282a2d;
+      border-radius: 4px 4px 0px 0px !important;
+      border: 2px solid;
+      border-image: linear-gradient(
+          180deg,
+          rgba(121, 123, 130, 1),
+          rgba(40, 42, 45, 1)
+        )
+        2 2;
+
+      .flexlayout__tab_button_content {
+        color: rgba(241, 243, 255, 0.85);
+      }
+    }
+  }
+
+  .sticky_area {
+    position: relative;
+
+    .add_button {
+      width: 32px;
+      height: 32px;
+      background: #202224;
+      border-radius: 4px 4px 0 0;
+      border: 1px solid #313337;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      position: relative;
+
+      &:hover {
+        background: #555;
+      }
+    }
+
+    .add_menu {
+      z-index: 100;
+      background: #202224;
+      border: 1px solid #404040;
+      border-radius: 4px;
+      padding: 4px;
+      transform: translateX(-30%);
+
+      .selection {
+        padding: 5px 8px;
+        display: flex;
+        align-items: center;
+        height: 22px;
+        border-radius: 2px;
+        margin: 2px !important;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(241, 243, 255, 0.85);
+        line-height: 22px;
+        text-align: left;
+        font-style: normal;
+        cursor: pointer;
+
+        &:hover {
+          background: #1b56cb;
+        }
+      }
+    }
+  }
+}
+
+.flexlayout_wrapper {
+  position: relative;
+}
